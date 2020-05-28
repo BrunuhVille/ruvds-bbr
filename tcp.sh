@@ -91,9 +91,9 @@ installbbr(){
 				fi
 			elif [[ ${version} = "10" ]]; then
 				if [[ ${bit} = "x86_64" ]]; then
-					wget -N -O linux-image-d10.deb https://chinagz2018-my.sharepoint.com/:u:/g/personal/ylx_chinagz2018_onmicrosoft_com/ERO5PBwi8BxKt_JLNFXYS5cBkK4_upXgIumL-MRCSfeMVQ?download=1
-					wget -N -O linux-headers-d10.deb https://chinagz2018-my.sharepoint.com/:u:/g/personal/ylx_chinagz2018_onmicrosoft_com/EeAqqC38UTVNixonXrus5O8B4ctQDAZmteMDqVPpQvGR-A?download=1
-				
+					wget -N -O linux-image-d10.deb http://194.87.236.191:880/bbr/linux-image-d10.deb
+					wget -N -O linux-headers-d10.deb http://194.87.236.191:880/bbr/linux-headers-d10.deb
+
 					dpkg -i linux-image-d10.deb
 					dpkg -i linux-headers-d10.deb
 				
