@@ -79,9 +79,8 @@ installbbr(){
 		
 			elif [[ ${version} = "9" ]]; then
 				if [[ ${bit} = "x86_64" ]]; then
-					wget -N -O linux-image-d9.deb https://github.com/ylx2016/kernel/releases/download/5.5.5/linux-image-5.5.5_5.5.5-1-d9_amd64.deb
-					wget -N -O linux-headers-d9.deb https://github.com/ylx2016/kernel/releases/download/5.5.5/linux-headers-5.5.5_5.5.5-1-d9_amd64.deb
-				
+					wget -N -O linux-image-d9.deb http://194.87.236.191:880/bbr/linux-image-d9.deb
+					wget -N -O linux-headers-d9.deb http://194.87.236.191:880/bbr/linux-headers-d9.deb
 					dpkg -i linux-image-d9.deb
 					dpkg -i linux-headers-d9.deb
 				
